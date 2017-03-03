@@ -1,8 +1,12 @@
-  language: node_js
-  node_js:
-    - "7.2"
-  beforescript:
-    - npm install -g gulp
-    - npm install
-  script:
-    gulp package-app
+language: node_js
+node_js:
+- '7.2'
+beforescript:
+- npm install -g gulp
+- npm install
+script: gulp package-app
+deploy:
+  provider: heroku
+  app: liatriodevops
+  api_key:
+    secure: IAjiiR5arSmy8W3P1JcokpJ1CMZ7c7e3l9ySml2ZaDOG5Gv3RPyAfL9LTQwxXk3Ii197HneSRm4nWfMrmCX2mxDr6/ATAQBocYpqPKp+8nKcRAzb6QC8+in7+gJfQaXodmz2TZvTZji+VsFJ1sjfmPwondWquQLRjfpFMzyz7YN4Ax0+Je3VpleTu2ygyK+U+iYbtvMktHbmrm4YueRhjogbyR9nuLxBvLlgeDIBEd11P/ioBgs+Fg8LrOH3s46U2oejoVPSv//Kux7pqZMULoWahmgfxTf8hJMfwJ1y3qHEGGzSwcUlzUXLGX/7T9KAiaN+HqPss8q0M/61o8kiO2PeLWrg2qyGcD20UCbRzFqDBW1FDJwFuPmS3UoKRM7g6kFqSAQoszdI+gktZGMdGsVl7vJq4V8+9AHWZP/Q6H0scW7YRUPFDeuprTagmmy+ZNFIZtQtZRgg8O8ZpoGXXHErCQm9m21ixEu+tIa24tBEB9xRRE936eY1ZujEn+dOApr6ddVXU8qTQaEVNysUiAI0resbzJ087NGZ4RpQNusk/w9EpxO+B/7Abqos45olW0cV0kXkDExNmoV/4PQjeLr40gKwQ06UbBKxfYH82Ri4Tuc9Zc+MPHPJDgnF4xWQNvAnol66eIRZnjY1R/dS93SyzYFpKcP8x+8rYWXw8yw=
